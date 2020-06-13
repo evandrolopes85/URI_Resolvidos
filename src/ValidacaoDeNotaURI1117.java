@@ -17,11 +17,16 @@ public class ValidacaoDeNotaURI1117{
 				count++;
 			}else{
 				System.out.println( "nota invalida" );
-			}		
+			}
+
+			if(count == 2)
+				break;		
 		};
 		
-		average = amount / count;
+		average = amount / 2;
 
 		System.out.printf( "media = %.2f\n", average );
+
+		teclado.close();
 	}
 }
